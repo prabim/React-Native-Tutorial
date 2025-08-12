@@ -6,7 +6,7 @@ export default function RootLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#ffffffff",
-        tabBarInactiveTintColor: "#ccb2b2ff",
+        tabBarInactiveTintColor: "#d6d6d6ff",
         headerStyle: {
           backgroundColor: "#ac0e0eee",
         },
@@ -37,19 +37,6 @@ export default function RootLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "information-sharp" : "information-outline"}
-              color={color}
-              size={24}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="main"
-        options={{
-          title: "Main",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "desktop-sharp" : "desktop-outline"}
               color={color}
               size={24}
             />
